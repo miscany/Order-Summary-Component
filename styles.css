@@ -30,8 +30,9 @@ h1 {
   width: 90%;
   margin: 50px auto;
   text-align: center;
+  max-width: 500px;
 }
-img {
+img.main-logo {
   width: 100%;
   border-radius: 2em 2em 0 0;
   margin-bottom: 0.5em;
@@ -39,4 +40,92 @@ img {
 
 .bottom-section {
   padding: 20px;
+}
+
+.annual-plan {
+  display: flex;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  padding: 20px;
+  border-radius: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.annual-plan img {
+  float: left;
+  width: 55px;
+}
+
+.annual-plan p {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  float: left;
+  padding-left: 20px;
+}
+.annual-plan p span {
+  font-weight: 400;
+  color: hsl(224, 23%, 55%);
+  display: block;
+}
+
+.flex-one {
+  flex: 2;
+}
+
+.flex-two {
+  flex: 1;
+}
+
+.flex-two a {
+  float: right;
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+}
+
+.flex-two a:hover {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 1em;
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px hsl(224, 23%, 55%);
+  margin-bottom: 1.8em;
+}
+
+button:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+.cancel-order {
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.cancel-order p {
+  margin-bottom: 1em;
+}
+
+.cancel-order p:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media screen and (min-width: 1052px) {
+  body {
+    background: url(./images/pattern-background-desktop.svg) no-repeat
+      hsl(225, 100%, 94%);
+    background-size: 100%;
+  }
+
+  .bottom-section {
+    padding: 70px;
+  }
 }
